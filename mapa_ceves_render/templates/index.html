@@ -1,0 +1,3074 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc766dfa98139737e64d9ac0fdca1fee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc766dfa98139737e64d9ac0fdca1fee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc766dfa98139737e64d9ac0fdca1fee = L.map(
+                "map_bc766dfa98139737e64d9ac0fdca1fee",
+                {
+                    center: [25.5, -101.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d076afe6912b6856e3432a97647ee7f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5d076afe6912b6856e3432a97647ee7f.addTo(map_bc766dfa98139737e64d9ac0fdca1fee);
+        
+    
+            var marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_b3f9def090280a18a923fb82f1903237 = L.marker(
+                [23.7693, -99.1713],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_db1db9fc20d52182169e2b4389e441ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_964286aec70ffbf0fad86549559b85b6 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_af08dabac1714897918be6c5ed2e5dcb = $(`<div id="html_af08dabac1714897918be6c5ed2e5dcb" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> VICTORIA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻24.9% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻42.8% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻30.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻136.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺59.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺47.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺69.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻46.6% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺59.6% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺58.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺129.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻36.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_964286aec70ffbf0fad86549559b85b6.setContent(html_af08dabac1714897918be6c5ed2e5dcb);
+            
+        
+
+        marker_b3f9def090280a18a923fb82f1903237.bindPopup(popup_964286aec70ffbf0fad86549559b85b6)
+        ;
+
+        
+    
+    
+            marker_b3f9def090280a18a923fb82f1903237.bindTooltip(
+                `<div>
+                     VICTORIA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3f9def090280a18a923fb82f1903237.setIcon(icon_db1db9fc20d52182169e2b4389e441ed);
+            
+    
+            var marker_6e107cd45f5514d3f1e5c55709705795 = L.marker(
+                [24.8793, -99.5842],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_2d17aaf1e6ca137518285f2c8c1f766d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_635929614e59c0ec15be8dcdf6d4061e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_417f0b4c643538f688abc32bddb32690 = $(`<div id="html_417f0b4c643538f688abc32bddb32690" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> LINARES BIMBO MIXTA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺16.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺31.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺49.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻65.3% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺37.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺8.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺44.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻84.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_635929614e59c0ec15be8dcdf6d4061e.setContent(html_417f0b4c643538f688abc32bddb32690);
+            
+        
+
+        marker_6e107cd45f5514d3f1e5c55709705795.bindPopup(popup_635929614e59c0ec15be8dcdf6d4061e)
+        ;
+
+        
+    
+    
+            marker_6e107cd45f5514d3f1e5c55709705795.bindTooltip(
+                `<div>
+                     LINARES BIMBO MIXTA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e107cd45f5514d3f1e5c55709705795.setIcon(icon_2d17aaf1e6ca137518285f2c8c1f766d);
+            
+    
+            var marker_e9f4483bf1230875fe5ebb3fbf6b9840 = L.marker(
+                [25.4541, -101.002],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_ca3f786faf2f7b6503f68e57e3d69630 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2e262d54d50144dc4f76319924c32a8 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_4aa3f78f806528b9ca311db0ccbb4f7b = $(`<div id="html_4aa3f78f806528b9ca311db0ccbb4f7b" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SALTILLO ORIENTE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺131.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺231.6% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺129.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺143.3% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺44.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺17.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺48.3% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻79.6% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_a2e262d54d50144dc4f76319924c32a8.setContent(html_4aa3f78f806528b9ca311db0ccbb4f7b);
+            
+        
+
+        marker_e9f4483bf1230875fe5ebb3fbf6b9840.bindPopup(popup_a2e262d54d50144dc4f76319924c32a8)
+        ;
+
+        
+    
+    
+            marker_e9f4483bf1230875fe5ebb3fbf6b9840.bindTooltip(
+                `<div>
+                     SALTILLO ORIENTE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9f4483bf1230875fe5ebb3fbf6b9840.setIcon(icon_ca3f786faf2f7b6503f68e57e3d69630);
+            
+    
+            var marker_b19992286d2adb278618d5ec7e511ccb = L.marker(
+                [25.4562, -101.016],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_5c2ec02cf55d8a944b08c66d4e07ee6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db79a830c08ed4cb8424cae3bfff3fba = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_75e11a7e7d34d0ff8370633794f50c4f = $(`<div id="html_75e11a7e7d34d0ff8370633794f50c4f" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SALTILLO PONIENTE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺127.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺21.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺111.3% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻74.3% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺40.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺62.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺79.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻33.3% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_db79a830c08ed4cb8424cae3bfff3fba.setContent(html_75e11a7e7d34d0ff8370633794f50c4f);
+            
+        
+
+        marker_b19992286d2adb278618d5ec7e511ccb.bindPopup(popup_db79a830c08ed4cb8424cae3bfff3fba)
+        ;
+
+        
+    
+    
+            marker_b19992286d2adb278618d5ec7e511ccb.bindTooltip(
+                `<div>
+                     SALTILLO PONIENTE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b19992286d2adb278618d5ec7e511ccb.setIcon(icon_5c2ec02cf55d8a944b08c66d4e07ee6e);
+            
+    
+            var marker_4665fe95e037f156686d92034ccbc355 = L.marker(
+                [25.4983, -103.409],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_8c334ac4a3b752030f73c6b4dcda9b12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d51dfe1059656c30bf1dded47f45e98 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_b62df6b3bb4e916b38afd45073123f23 = $(`<div id="html_b62df6b3bb4e916b38afd45073123f23" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> TORREON<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺69.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻0.1% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺58.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻15.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺34.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺55.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺43.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻39.6% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺31.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻2.9% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺50.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻99.4% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9d51dfe1059656c30bf1dded47f45e98.setContent(html_b62df6b3bb4e916b38afd45073123f23);
+            
+        
+
+        marker_4665fe95e037f156686d92034ccbc355.bindPopup(popup_9d51dfe1059656c30bf1dded47f45e98)
+        ;
+
+        
+    
+    
+            marker_4665fe95e037f156686d92034ccbc355.bindTooltip(
+                `<div>
+                     TORREON (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4665fe95e037f156686d92034ccbc355.setIcon(icon_8c334ac4a3b752030f73c6b4dcda9b12);
+            
+    
+            var marker_ae5e4bb8e1a2003b35fa566efbe5db7c = L.marker(
+                [25.562, -103.459],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_2a1e03da9c6cff56b9ba73b51650a6f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56e871433d846233999dd397f1ac96b5 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_259c50e6ac47938d8a261af834cd4699 = $(`<div id="html_259c50e6ac47938d8a261af834cd4699" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> GOMEZ PALACIO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺70.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺11.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺64.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻84.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_56e871433d846233999dd397f1ac96b5.setContent(html_259c50e6ac47938d8a261af834cd4699);
+            
+        
+
+        marker_ae5e4bb8e1a2003b35fa566efbe5db7c.bindPopup(popup_56e871433d846233999dd397f1ac96b5)
+        ;
+
+        
+    
+    
+            marker_ae5e4bb8e1a2003b35fa566efbe5db7c.bindTooltip(
+                `<div>
+                     GOMEZ PALACIO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae5e4bb8e1a2003b35fa566efbe5db7c.setIcon(icon_2a1e03da9c6cff56b9ba73b51650a6f6);
+            
+    
+            var marker_7fe9bcdcc2244cc4092596286b1a3e1c = L.marker(
+                [25.6497, -100.141],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_4d2dd8cc7e4902eb50eebe7b77535ea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a883dd4f8b5566f6c583d799fb8ff968 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_bdbe892a79c1cc84ecc64d482a4cec6b = $(`<div id="html_bdbe892a79c1cc84ecc64d482a4cec6b" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CAVAZOS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺297.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺230.8% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺88.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺9.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺79.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻81.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_a883dd4f8b5566f6c583d799fb8ff968.setContent(html_bdbe892a79c1cc84ecc64d482a4cec6b);
+            
+        
+
+        marker_7fe9bcdcc2244cc4092596286b1a3e1c.bindPopup(popup_a883dd4f8b5566f6c583d799fb8ff968)
+        ;
+
+        
+    
+    
+            marker_7fe9bcdcc2244cc4092596286b1a3e1c.bindTooltip(
+                `<div>
+                     CAVAZOS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fe9bcdcc2244cc4092596286b1a3e1c.setIcon(icon_4d2dd8cc7e4902eb50eebe7b77535ea4);
+            
+    
+            var marker_98dc5c2153ae44e440e51586d8ce5b3e = L.marker(
+                [25.6775, -100.42],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_6e7f95fc9abe786f5d69b5ef98775664 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84b8b6efce0fc8fff9882b00e927a612 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_7a72743bd1a082076094b18244c2dc32 = $(`<div id="html_7a72743bd1a082076094b18244c2dc32" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SANTA CATARINA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺76.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺18.6% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺77.9% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻73.3% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_84b8b6efce0fc8fff9882b00e927a612.setContent(html_7a72743bd1a082076094b18244c2dc32);
+            
+        
+
+        marker_98dc5c2153ae44e440e51586d8ce5b3e.bindPopup(popup_84b8b6efce0fc8fff9882b00e927a612)
+        ;
+
+        
+    
+    
+            marker_98dc5c2153ae44e440e51586d8ce5b3e.bindTooltip(
+                `<div>
+                     SANTA CATARINA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98dc5c2153ae44e440e51586d8ce5b3e.setIcon(icon_6e7f95fc9abe786f5d69b5ef98775664);
+            
+    
+            var marker_4768258af5db690b524de81ea4ab092c = L.marker(
+                [25.7068, -100.344],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_9b42d88d4be411adf6130e9f7358cbbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6acaf34a24f53feaca1d509bbe7e408e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_d498d63fda7b59937dcd2e4eac005fc5 = $(`<div id="html_d498d63fda7b59937dcd2e4eac005fc5" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MITRAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺11.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻18.6% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺6.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻115.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺12.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺7.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺17.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻87.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_6acaf34a24f53feaca1d509bbe7e408e.setContent(html_d498d63fda7b59937dcd2e4eac005fc5);
+            
+        
+
+        marker_4768258af5db690b524de81ea4ab092c.bindPopup(popup_6acaf34a24f53feaca1d509bbe7e408e)
+        ;
+
+        
+    
+    
+            marker_4768258af5db690b524de81ea4ab092c.bindTooltip(
+                `<div>
+                     MITRAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4768258af5db690b524de81ea4ab092c.setIcon(icon_9b42d88d4be411adf6130e9f7358cbbf);
+            
+    
+            var marker_35ef4aece5f39bf86ac0a438245e4a81 = L.marker(
+                [25.7070477, -100.284799],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_6b81f720fcae7b8c3552d6bbadd6e7f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f4f6b69f1cf6b063baf90c7c4944183 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_9401007f3a72e7394f7a81eeb4bc9251 = $(`<div id="html_9401007f3a72e7394f7a81eeb4bc9251" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> -1081_FABRICA BIMBO MONTERREY<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻21.9% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9f4f6b69f1cf6b063baf90c7c4944183.setContent(html_9401007f3a72e7394f7a81eeb4bc9251);
+            
+        
+
+        marker_35ef4aece5f39bf86ac0a438245e4a81.bindPopup(popup_9f4f6b69f1cf6b063baf90c7c4944183)
+        ;
+
+        
+    
+    
+            marker_35ef4aece5f39bf86ac0a438245e4a81.bindTooltip(
+                `<div>
+                     -1081_FABRICA BIMBO MONTERREY (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35ef4aece5f39bf86ac0a438245e4a81.setIcon(icon_6b81f720fcae7b8c3552d6bbadd6e7f0);
+            
+    
+            var marker_f594a6e283e0a71afef8f636b5ef8432 = L.marker(
+                [25.723, -100.362],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_a7b53ede268cc9fd1b2239c6654426f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7ca4b6844f2040d6c2bc28a2f873972 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_ba34affa09b31a53a99609bb3869c690 = $(`<div id="html_ba34affa09b31a53a99609bb3869c690" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> LINCOLN<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺59.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺2.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺64.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺15.0% sobre Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_b7ca4b6844f2040d6c2bc28a2f873972.setContent(html_ba34affa09b31a53a99609bb3869c690);
+            
+        
+
+        marker_f594a6e283e0a71afef8f636b5ef8432.bindPopup(popup_b7ca4b6844f2040d6c2bc28a2f873972)
+        ;
+
+        
+    
+    
+            marker_f594a6e283e0a71afef8f636b5ef8432.bindTooltip(
+                `<div>
+                     LINCOLN (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f594a6e283e0a71afef8f636b5ef8432.setIcon(icon_a7b53ede268cc9fd1b2239c6654426f9);
+            
+    
+            var marker_47a9404156bc4482cdd26e8de27a73b3 = L.marker(
+                [25.7285, -100.206],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_f605a4500a2d4f95c88e8aeaedc0a9c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0df516bce8482135fa0a0d4f23f0787d = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_fc7d3274011761ede0439891aca16079 = $(`<div id="html_fc7d3274011761ede0439891aca16079" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> LA FE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻6.4% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺5.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺15.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻89.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_0df516bce8482135fa0a0d4f23f0787d.setContent(html_fc7d3274011761ede0439891aca16079);
+            
+        
+
+        marker_47a9404156bc4482cdd26e8de27a73b3.bindPopup(popup_0df516bce8482135fa0a0d4f23f0787d)
+        ;
+
+        
+    
+    
+            marker_47a9404156bc4482cdd26e8de27a73b3.bindTooltip(
+                `<div>
+                     LA FE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_47a9404156bc4482cdd26e8de27a73b3.setIcon(icon_f605a4500a2d4f95c88e8aeaedc0a9c1);
+            
+    
+            var marker_32cfe703c5e4f4b417a03d543514ddce = L.marker(
+                [25.7367, -100.205],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_cee9a6482157ffd0b1a02b5bab704f72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1e426924248c543d03adb29581e3048 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_e728c68ce7bd614fa1cdc0a4c81152fb = $(`<div id="html_e728c68ce7bd614fa1cdc0a4c81152fb" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> AEROPUERTO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻26.1% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻28.2% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻32.4% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻125.5% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻5.5% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻1.5% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻5.4% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻99.8% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔻2.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺1.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺1.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻64.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_b1e426924248c543d03adb29581e3048.setContent(html_e728c68ce7bd614fa1cdc0a4c81152fb);
+            
+        
+
+        marker_32cfe703c5e4f4b417a03d543514ddce.bindPopup(popup_b1e426924248c543d03adb29581e3048)
+        ;
+
+        
+    
+    
+            marker_32cfe703c5e4f4b417a03d543514ddce.bindTooltip(
+                `<div>
+                     AEROPUERTO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32cfe703c5e4f4b417a03d543514ddce.setIcon(icon_cee9a6482157ffd0b1a02b5bab704f72);
+            
+    
+            var marker_2bc633a0867f5b29465e5fe340bfbca8 = L.marker(
+                [25.7598, -100.234],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_5866a1390e0c2000f6b8a2a6e52a9742 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be800306edd2c0f7e1fcb60d6587a065 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_80b56548bb9a222ff61fac995eb4cb26 = $(`<div id="html_80b56548bb9a222ff61fac995eb4cb26" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SAN NICOLAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺107.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺21.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺116.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻74.2% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_be800306edd2c0f7e1fcb60d6587a065.setContent(html_80b56548bb9a222ff61fac995eb4cb26);
+            
+        
+
+        marker_2bc633a0867f5b29465e5fe340bfbca8.bindPopup(popup_be800306edd2c0f7e1fcb60d6587a065)
+        ;
+
+        
+    
+    
+            marker_2bc633a0867f5b29465e5fe340bfbca8.bindTooltip(
+                `<div>
+                     SAN NICOLAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bc633a0867f5b29465e5fe340bfbca8.setIcon(icon_5866a1390e0c2000f6b8a2a6e52a9742);
+            
+    
+            var marker_dbc1b8c8746e7a9237c1d25b30ddfb9e = L.marker(
+                [25.7643, -100.309],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_dab43d9b075902ba252c4867dcb983be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee61fec76692dbab5466b8d3dcf9e450 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_e6b0cfe0178c9ef24c3a043dfff73188 = $(`<div id="html_e6b0cfe0178c9ef24c3a043dfff73188" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SENDERO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺35.6% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺0.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺39.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻89.3% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_ee61fec76692dbab5466b8d3dcf9e450.setContent(html_e6b0cfe0178c9ef24c3a043dfff73188);
+            
+        
+
+        marker_dbc1b8c8746e7a9237c1d25b30ddfb9e.bindPopup(popup_ee61fec76692dbab5466b8d3dcf9e450)
+        ;
+
+        
+    
+    
+            marker_dbc1b8c8746e7a9237c1d25b30ddfb9e.bindTooltip(
+                `<div>
+                     SENDERO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dbc1b8c8746e7a9237c1d25b30ddfb9e.setIcon(icon_dab43d9b075902ba252c4867dcb983be);
+            
+    
+            var marker_9a47e05025b3281573f5a12c99ccb62e = L.marker(
+                [25.7757, -100.316],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_80a0622ba84171a7d350c1c21e39140d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11ca6f4918044dafd36170323045bfee = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_3b0ceff8d54cddf10ed09820369923dc = $(`<div id="html_3b0ceff8d54cddf10ed09820369923dc" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> ESCOBEDO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺780.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺41.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺785.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻45.4% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_11ca6f4918044dafd36170323045bfee.setContent(html_3b0ceff8d54cddf10ed09820369923dc);
+            
+        
+
+        marker_9a47e05025b3281573f5a12c99ccb62e.bindPopup(popup_11ca6f4918044dafd36170323045bfee)
+        ;
+
+        
+    
+    
+            marker_9a47e05025b3281573f5a12c99ccb62e.bindTooltip(
+                `<div>
+                     ESCOBEDO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a47e05025b3281573f5a12c99ccb62e.setIcon(icon_80a0622ba84171a7d350c1c21e39140d);
+            
+    
+            var marker_d568ea5284134e57818c649326da0e0a = L.marker(
+                [25.8265, -97.5385],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_27f96260b14d64ed35bd1889712c4513 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef2963a0027cb0f87b9f931e4965505f = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_d37af83a8a3b6ce04e32bfd553e744cd = $(`<div id="html_d37af83a8a3b6ce04e32bfd553e744cd" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MATAMOROS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺41.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺36.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺37.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻52.6% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺554.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺99.6% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺591.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺5.9% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺34.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺6.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺39.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻91.3% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_ef2963a0027cb0f87b9f931e4965505f.setContent(html_d37af83a8a3b6ce04e32bfd553e744cd);
+            
+        
+
+        marker_d568ea5284134e57818c649326da0e0a.bindPopup(popup_ef2963a0027cb0f87b9f931e4965505f)
+        ;
+
+        
+    
+    
+            marker_d568ea5284134e57818c649326da0e0a.bindTooltip(
+                `<div>
+                     MATAMOROS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d568ea5284134e57818c649326da0e0a.setIcon(icon_27f96260b14d64ed35bd1889712c4513);
+            
+    
+            var marker_9664f5df4f62defa59e32497711fe989 = L.marker(
+                [26.0443, -98.3608],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_d4938bdd065aea25ee28373f58feda78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32eb6d9212e1c831930cd1ec7eca5b67 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_2ff8a4e3935002fc992bd158f139a0f8 = $(`<div id="html_2ff8a4e3935002fc992bd158f139a0f8" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> REYNOSA 2<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻11.3% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻21.2% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻14.6% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻97.9% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺38.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺29.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺46.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻48.2% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_32eb6d9212e1c831930cd1ec7eca5b67.setContent(html_2ff8a4e3935002fc992bd158f139a0f8);
+            
+        
+
+        marker_9664f5df4f62defa59e32497711fe989.bindPopup(popup_32eb6d9212e1c831930cd1ec7eca5b67)
+        ;
+
+        
+    
+    
+            marker_9664f5df4f62defa59e32497711fe989.bindTooltip(
+                `<div>
+                     REYNOSA 2 (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9664f5df4f62defa59e32497711fe989.setIcon(icon_d4938bdd065aea25ee28373f58feda78);
+            
+    
+            var marker_6d448e43c44b3f815e0e7c7b5c9e0239 = L.marker(
+                [26.061, -98.3042],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_1187e3ba1a8a0620901c37213616bb1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1442d8dd625d082aeff50f4d569bec38 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_d3bd54559122adcd75f2273ad32c9f03 = $(`<div id="html_d3bd54559122adcd75f2273ad32c9f03" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> REYNOSA 1<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺87.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺6.6% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺90.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻90.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_1442d8dd625d082aeff50f4d569bec38.setContent(html_d3bd54559122adcd75f2273ad32c9f03);
+            
+        
+
+        marker_6d448e43c44b3f815e0e7c7b5c9e0239.bindPopup(popup_1442d8dd625d082aeff50f4d569bec38)
+        ;
+
+        
+    
+    
+            marker_6d448e43c44b3f815e0e7c7b5c9e0239.bindTooltip(
+                `<div>
+                     REYNOSA 1 (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d448e43c44b3f815e0e7c7b5c9e0239.setIcon(icon_1187e3ba1a8a0620901c37213616bb1f);
+            
+    
+            var marker_0b7ae822ef570f166becc0fe8c590283 = L.marker(
+                [26.5105, -100.175],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_16ca3eb253bc8cc061027c7da2dcbf9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e7bd48ed4cd3bfb5cf3fce703edc7ec = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_7617f9c66f9b9f0c3d02e4b29bd11a8c = $(`<div id="html_7617f9c66f9b9f0c3d02e4b29bd11a8c" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> HIDALGO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻27.7% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻46.7% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻48.2% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻144.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺82.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺8.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺88.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻91.4% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_6e7bd48ed4cd3bfb5cf3fce703edc7ec.setContent(html_7617f9c66f9b9f0c3d02e4b29bd11a8c);
+            
+        
+
+        marker_0b7ae822ef570f166becc0fe8c590283.bindPopup(popup_6e7bd48ed4cd3bfb5cf3fce703edc7ec)
+        ;
+
+        
+    
+    
+            marker_0b7ae822ef570f166becc0fe8c590283.bindTooltip(
+                `<div>
+                     HIDALGO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0b7ae822ef570f166becc0fe8c590283.setIcon(icon_16ca3eb253bc8cc061027c7da2dcbf9a);
+            
+    
+            var marker_e09faa917fade17be206a1222349de76 = L.marker(
+                [26.9318, -105.719],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_b89592b843c3cf86183dbebdf886b8bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_164205659c80b7f06202547be42eab06 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_cc708ca168f9d51cea8169050911ec9a = $(`<div id="html_cc708ca168f9d51cea8169050911ec9a" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> GUACHOCHI<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺62.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺18.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺62.3% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻77.6% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_164205659c80b7f06202547be42eab06.setContent(html_cc708ca168f9d51cea8169050911ec9a);
+            
+        
+
+        marker_e09faa917fade17be206a1222349de76.bindPopup(popup_164205659c80b7f06202547be42eab06)
+        ;
+
+        
+    
+    
+            marker_e09faa917fade17be206a1222349de76.bindTooltip(
+                `<div>
+                     GUACHOCHI (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e09faa917fade17be206a1222349de76.setIcon(icon_b89592b843c3cf86183dbebdf886b8bb);
+            
+    
+            var marker_8c09cb57eafce4806f1859ba7159d65f = L.marker(
+                [26.9333, -101.474],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_323914f658cdcfd1dfdea6ddc55c3612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1bed91c636ed7641725ee2d776f5fd6 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_d88a9b6d04ae0a832d77d53a53ef010f = $(`<div id="html_d88a9b6d04ae0a832d77d53a53ef010f" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MONCLOVA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺190.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺25.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺215.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻67.8% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺33.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺28.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺34.3% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻67.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_f1bed91c636ed7641725ee2d776f5fd6.setContent(html_d88a9b6d04ae0a832d77d53a53ef010f);
+            
+        
+
+        marker_8c09cb57eafce4806f1859ba7159d65f.bindPopup(popup_f1bed91c636ed7641725ee2d776f5fd6)
+        ;
+
+        
+    
+    
+            marker_8c09cb57eafce4806f1859ba7159d65f.bindTooltip(
+                `<div>
+                     MONCLOVA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c09cb57eafce4806f1859ba7159d65f.setIcon(icon_323914f658cdcfd1dfdea6ddc55c3612);
+            
+    
+            var marker_24f772c51a7188ec2ccd7e25c6afc1b0 = L.marker(
+                [26.938, -105.717],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_da8ace6d3dbe01322df717fabf73329a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c574deadf70d45480c34e30ae76789f = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_45e237e46c62d047eb2a88857e0c0e7f = $(`<div id="html_45e237e46c62d047eb2a88857e0c0e7f" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> PARRAL<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺50.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺9.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺56.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻87.1% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺178.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺6.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺175.8% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻90.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9c574deadf70d45480c34e30ae76789f.setContent(html_45e237e46c62d047eb2a88857e0c0e7f);
+            
+        
+
+        marker_24f772c51a7188ec2ccd7e25c6afc1b0.bindPopup(popup_9c574deadf70d45480c34e30ae76789f)
+        ;
+
+        
+    
+    
+            marker_24f772c51a7188ec2ccd7e25c6afc1b0.bindTooltip(
+                `<div>
+                     PARRAL (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24f772c51a7188ec2ccd7e25c6afc1b0.setIcon(icon_da8ace6d3dbe01322df717fabf73329a);
+            
+    
+            var marker_09d1f61319c0e6eb6f48d4bf370b0698 = L.marker(
+                [27.0487, -109.457],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_18af5eb90a2b6b78b8604cd6194f51be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9020d11dfa941fcfb6d6a69951db0c1a = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_c21db16a4aa9755a3da0d2d78e1a4562 = $(`<div id="html_c21db16a4aa9755a3da0d2d78e1a4562" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> NAVOJOA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺31.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺46.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺31.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻49.6% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺128.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺129.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺142.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺35.8% sobre Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9020d11dfa941fcfb6d6a69951db0c1a.setContent(html_c21db16a4aa9755a3da0d2d78e1a4562);
+            
+        
+
+        marker_09d1f61319c0e6eb6f48d4bf370b0698.bindPopup(popup_9020d11dfa941fcfb6d6a69951db0c1a)
+        ;
+
+        
+    
+    
+            marker_09d1f61319c0e6eb6f48d4bf370b0698.bindTooltip(
+                `<div>
+                     NAVOJOA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09d1f61319c0e6eb6f48d4bf370b0698.setIcon(icon_18af5eb90a2b6b78b8604cd6194f51be);
+            
+    
+            var marker_15a39ba05d66622f71d50e533869c53a = L.marker(
+                [27.3492, -112.27],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_64e6da14cb94e30000f9d9660ee12108 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1114ae4239cf7969df9a731ac83a7446 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_cd409a47b716ca6e41f48e2819043f97 = $(`<div id="html_cd409a47b716ca6e41f48e2819043f97" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SANTA ROSALIA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺150.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺387.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺87.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺287.5% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺31.8% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺41.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺36.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻57.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_1114ae4239cf7969df9a731ac83a7446.setContent(html_cd409a47b716ca6e41f48e2819043f97);
+            
+        
+
+        marker_15a39ba05d66622f71d50e533869c53a.bindPopup(popup_1114ae4239cf7969df9a731ac83a7446)
+        ;
+
+        
+    
+    
+            marker_15a39ba05d66622f71d50e533869c53a.bindTooltip(
+                `<div>
+                     SANTA ROSALIA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15a39ba05d66622f71d50e533869c53a.setIcon(icon_64e6da14cb94e30000f9d9660ee12108);
+            
+    
+            var marker_aca9c2dded6573167770ea0983754b20 = L.marker(
+                [27.4625, -99.5317],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_d7f509a918d5f39fc77ab497aa9fb34f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67c1cdab1b4b015e8a2644995dacfdc1 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_04b8095d2f493101d092ccd3066fa732 = $(`<div id="html_04b8095d2f493101d092ccd3066fa732" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> LAREDO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻2.4% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻18.5% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻6.7% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻106.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺17.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺2.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺20.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻94.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺53.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺16.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺58.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻93.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_67c1cdab1b4b015e8a2644995dacfdc1.setContent(html_04b8095d2f493101d092ccd3066fa732);
+            
+        
+
+        marker_aca9c2dded6573167770ea0983754b20.bindPopup(popup_67c1cdab1b4b015e8a2644995dacfdc1)
+        ;
+
+        
+    
+    
+            marker_aca9c2dded6573167770ea0983754b20.bindTooltip(
+                `<div>
+                     LAREDO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aca9c2dded6573167770ea0983754b20.setIcon(icon_d7f509a918d5f39fc77ab497aa9fb34f);
+            
+    
+            var marker_e9b8705cff1c8123572a92e19805cbbe = L.marker(
+                [27.477, -109.91],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_5f7cfc97fd3c23cd414fec405fcac182 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d221c6001e066adfddd26b8a559e1f91 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_f8a1beffbfd47944ba6f5ce3afb49aec = $(`<div id="html_f8a1beffbfd47944ba6f5ce3afb49aec" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CD. OBREGON<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻23.1% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻11.2% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻28.6% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻96.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺109.8% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺6.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺118.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻90.7% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺150.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺37.9% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺150.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻9.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_d221c6001e066adfddd26b8a559e1f91.setContent(html_f8a1beffbfd47944ba6f5ce3afb49aec);
+            
+        
+
+        marker_e9b8705cff1c8123572a92e19805cbbe.bindPopup(popup_d221c6001e066adfddd26b8a559e1f91)
+        ;
+
+        
+    
+    
+            marker_e9b8705cff1c8123572a92e19805cbbe.bindTooltip(
+                `<div>
+                     CD. OBREGON (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9b8705cff1c8123572a92e19805cbbe.setIcon(icon_5f7cfc97fd3c23cd414fec405fcac182);
+            
+    
+            var marker_c01852f6cc5682c6463bc3e9a91eb9a1 = L.marker(
+                [27.8387, -101.126],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_55f7a374b57857b770d6862e2dc3ab72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76a1dbee5083ca215271c71606a08d51 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_f0892f135ff6bd9a9d3c182306ce5bb1 = $(`<div id="html_f0892f135ff6bd9a9d3c182306ce5bb1" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SABINAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻24.3% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻23.9% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻19.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻123.7% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺25.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺19.9% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺31.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻72.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_76a1dbee5083ca215271c71606a08d51.setContent(html_f0892f135ff6bd9a9d3c182306ce5bb1);
+            
+        
+
+        marker_c01852f6cc5682c6463bc3e9a91eb9a1.bindPopup(popup_76a1dbee5083ca215271c71606a08d51)
+        ;
+
+        
+    
+    
+            marker_c01852f6cc5682c6463bc3e9a91eb9a1.bindTooltip(
+                `<div>
+                     SABINAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c01852f6cc5682c6463bc3e9a91eb9a1.setIcon(icon_55f7a374b57857b770d6862e2dc3ab72);
+            
+    
+            var marker_7ee3168dbc2d107b9bf45e4149cca37d = L.marker(
+                [27.9518, -110.932],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_ba35e29aac55405db08552313d96dd17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60ae3ea2c34e30f179b65e9a149f417a = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_69d3b30710f0a7732ccb8fd886d2991e = $(`<div id="html_69d3b30710f0a7732ccb8fd886d2991e" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> GUAYMAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺83.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺44.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺65.9% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻51.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺147.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺28.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺150.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻47.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_60ae3ea2c34e30f179b65e9a149f417a.setContent(html_69d3b30710f0a7732ccb8fd886d2991e);
+            
+        
+
+        marker_7ee3168dbc2d107b9bf45e4149cca37d.bindPopup(popup_60ae3ea2c34e30f179b65e9a149f417a)
+        ;
+
+        
+    
+    
+            marker_7ee3168dbc2d107b9bf45e4149cca37d.bindTooltip(
+                `<div>
+                     GUAYMAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ee3168dbc2d107b9bf45e4149cca37d.setIcon(icon_ba35e29aac55405db08552313d96dd17);
+            
+    
+            var marker_725e310ff998881f78ff3269dd5dfdcd = L.marker(
+                [27.9685, -114.036],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_26a0695dc05f87930a367487262cd0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a61861c174700b8ffd7bc70e2198ebc = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_4d976c5dea40f78a6515a472086fdeb6 = $(`<div id="html_4d976c5dea40f78a6515a472086fdeb6" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> GUERRERO NEGRO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺14.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺94.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻21.3% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺17.4% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺38.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺24.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺45.9% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻69.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_6a61861c174700b8ffd7bc70e2198ebc.setContent(html_4d976c5dea40f78a6515a472086fdeb6);
+            
+        
+
+        marker_725e310ff998881f78ff3269dd5dfdcd.bindPopup(popup_6a61861c174700b8ffd7bc70e2198ebc)
+        ;
+
+        
+    
+    
+            marker_725e310ff998881f78ff3269dd5dfdcd.bindTooltip(
+                `<div>
+                     GUERRERO NEGRO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_725e310ff998881f78ff3269dd5dfdcd.setIcon(icon_26a0695dc05f87930a367487262cd0b9);
+            
+    
+            var marker_e55f7c8ac7c57a0aebed71d3f292fa1e = L.marker(
+                [27.9735, -107.601],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_ddb8e202c18810e50d5644ca4ecc41f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db02c09d31050847732939ccf7f9560d = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_c2363c61ade05fef4e8758ca0de60aa1 = $(`<div id="html_c2363c61ade05fef4e8758ca0de60aa1" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SAN JUANITO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺10.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺33.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺15.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻66.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_db02c09d31050847732939ccf7f9560d.setContent(html_c2363c61ade05fef4e8758ca0de60aa1);
+            
+        
+
+        marker_e55f7c8ac7c57a0aebed71d3f292fa1e.bindPopup(popup_db02c09d31050847732939ccf7f9560d)
+        ;
+
+        
+    
+    
+            marker_e55f7c8ac7c57a0aebed71d3f292fa1e.bindTooltip(
+                `<div>
+                     SAN JUANITO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e55f7c8ac7c57a0aebed71d3f292fa1e.setIcon(icon_ddb8e202c18810e50d5644ca4ecc41f2);
+            
+    
+            var marker_2a60790a1272b72ce703bf0ed80f0baf = L.marker(
+                [28.2118, -105.482],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_994334eb4d5b246c6fb1c6dfabe04062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f9204f5d442edc643de2a2eb5310ba8 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_bdcf8c3ad93729bd87c3a2b50c7a7cd1 = $(`<div id="html_bdcf8c3ad93729bd87c3a2b50c7a7cd1" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> DELICIAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺114.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻1.4% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺102.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺118.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺10.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺121.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻87.6% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_3f9204f5d442edc643de2a2eb5310ba8.setContent(html_bdcf8c3ad93729bd87c3a2b50c7a7cd1);
+            
+        
+
+        marker_2a60790a1272b72ce703bf0ed80f0baf.bindPopup(popup_3f9204f5d442edc643de2a2eb5310ba8)
+        ;
+
+        
+    
+    
+            marker_2a60790a1272b72ce703bf0ed80f0baf.bindTooltip(
+                `<div>
+                     DELICIAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a60790a1272b72ce703bf0ed80f0baf.setIcon(icon_994334eb4d5b246c6fb1c6dfabe04062);
+            
+    
+            var marker_d903a11a95af027821026f922d32a3b5 = L.marker(
+                [28.436, -106.83],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_192fb9b9c3ee41a76d40e90d9856922c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b69f6186f488c1fb69fc404640dd2a15 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_b366949171dd25cceb829e2c1f0c6a82 = $(`<div id="html_b366949171dd25cceb829e2c1f0c6a82" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CUAUHTEMOC<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺7.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺8.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺25.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻86.8% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺95.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺5.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺102.9% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻92.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_b69f6186f488c1fb69fc404640dd2a15.setContent(html_b366949171dd25cceb829e2c1f0c6a82);
+            
+        
+
+        marker_d903a11a95af027821026f922d32a3b5.bindPopup(popup_b69f6186f488c1fb69fc404640dd2a15)
+        ;
+
+        
+    
+    
+            marker_d903a11a95af027821026f922d32a3b5.bindTooltip(
+                `<div>
+                     CUAUHTEMOC (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d903a11a95af027821026f922d32a3b5.setIcon(icon_192fb9b9c3ee41a76d40e90d9856922c);
+            
+    
+            var marker_a6b7a01b11942342f9181efaf10c9e76 = L.marker(
+                [28.6684887, -106.0851176],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_9f4db592d9c93bc5ec0f209501274931 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d6ed96e2fd4dffd33e93ecd1e49beee = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_e0cb83aead2d84589c5e538cc0908afb = $(`<div id="html_e0cb83aead2d84589c5e538cc0908afb" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> -1082_FABRICA BIMBO CHIHUAHUA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺107.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺7.3% sobre Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_8d6ed96e2fd4dffd33e93ecd1e49beee.setContent(html_e0cb83aead2d84589c5e538cc0908afb);
+            
+        
+
+        marker_a6b7a01b11942342f9181efaf10c9e76.bindPopup(popup_8d6ed96e2fd4dffd33e93ecd1e49beee)
+        ;
+
+        
+    
+    
+            marker_a6b7a01b11942342f9181efaf10c9e76.bindTooltip(
+                `<div>
+                     -1082_FABRICA BIMBO CHIHUAHUA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6b7a01b11942342f9181efaf10c9e76.setIcon(icon_9f4db592d9c93bc5ec0f209501274931);
+            
+    
+            var marker_03ebe972ff96723d5d7fcdf39c4d0d59 = L.marker(
+                [28.6918, -100.53],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_f12f78fdc9109e0492c59cc2de2a969e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_666c6e614200c3bbea16c7004f4ed6c9 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_c1a125df60053f5b97f8a8307f359b35 = $(`<div id="html_c1a125df60053f5b97f8a8307f359b35" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> PIEDRAS NEGRAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺590.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻1.8% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺478.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻96.8% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺72.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺214.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺302.8% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺129.2% sobre Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_666c6e614200c3bbea16c7004f4ed6c9.setContent(html_c1a125df60053f5b97f8a8307f359b35);
+            
+        
+
+        marker_03ebe972ff96723d5d7fcdf39c4d0d59.bindPopup(popup_666c6e614200c3bbea16c7004f4ed6c9)
+        ;
+
+        
+    
+    
+            marker_03ebe972ff96723d5d7fcdf39c4d0d59.bindTooltip(
+                `<div>
+                     PIEDRAS NEGRAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_03ebe972ff96723d5d7fcdf39c4d0d59.setIcon(icon_f12f78fdc9109e0492c59cc2de2a969e);
+            
+    
+            var marker_3ee1944f9511cac1d3f969bac417fa50 = L.marker(
+                [28.716, -106.117],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_3315ae0eb15b37c7320a45c0e09696e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5435ba5f9c84562790d5f792963dc61a = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_ab01e33873c90ac2deca6e82155255bb = $(`<div id="html_ab01e33873c90ac2deca6e82155255bb" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CHIHUAHUA NORTE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻6.3% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺65.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻9.2% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻26.7% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺10.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺41.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺13.8% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻51.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺16.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺15.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺20.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻84.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_5435ba5f9c84562790d5f792963dc61a.setContent(html_ab01e33873c90ac2deca6e82155255bb);
+            
+        
+
+        marker_3ee1944f9511cac1d3f969bac417fa50.bindPopup(popup_5435ba5f9c84562790d5f792963dc61a)
+        ;
+
+        
+    
+    
+            marker_3ee1944f9511cac1d3f969bac417fa50.bindTooltip(
+                `<div>
+                     CHIHUAHUA NORTE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ee1944f9511cac1d3f969bac417fa50.setIcon(icon_3315ae0eb15b37c7320a45c0e09696e9);
+            
+    
+            var marker_328501bffd6af60ed0334c8119bce989 = L.marker(
+                [29.1117, -111.032],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_60bc46b71682934047a4df8226b07fd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43a850b0c01b7e10adfa5b97511e6abd = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_6d0a06e0fcf21dd479cbd92b8ec424ea = $(`<div id="html_6d0a06e0fcf21dd479cbd92b8ec424ea" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> HERMOSILLO LAS TORRES<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺31.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻19.4% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺36.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻81.9% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺21.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻10.8% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺19.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻107.2% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺24.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺22.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺57.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻79.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_43a850b0c01b7e10adfa5b97511e6abd.setContent(html_6d0a06e0fcf21dd479cbd92b8ec424ea);
+            
+        
+
+        marker_328501bffd6af60ed0334c8119bce989.bindPopup(popup_43a850b0c01b7e10adfa5b97511e6abd)
+        ;
+
+        
+    
+    
+            marker_328501bffd6af60ed0334c8119bce989.bindTooltip(
+                `<div>
+                     HERMOSILLO LAS TORRES (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_328501bffd6af60ed0334c8119bce989.setIcon(icon_60bc46b71682934047a4df8226b07fd8);
+            
+    
+            var marker_7a5b00987b01f0b05a58b54b0beea140 = L.marker(
+                [29.1738, -107.402],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_f2c604bc95da653fa3071bf66a5c1521 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9179ea8c18591cee7600d149e4e79c87 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_ec07939e17e2234bccf0e6932a19acac = $(`<div id="html_ec07939e17e2234bccf0e6932a19acac" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> EL TERRERO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺129.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺45.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺140.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻51.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9179ea8c18591cee7600d149e4e79c87.setContent(html_ec07939e17e2234bccf0e6932a19acac);
+            
+        
+
+        marker_7a5b00987b01f0b05a58b54b0beea140.bindPopup(popup_9179ea8c18591cee7600d149e4e79c87)
+        ;
+
+        
+    
+    
+            marker_7a5b00987b01f0b05a58b54b0beea140.bindTooltip(
+                `<div>
+                     EL TERRERO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a5b00987b01f0b05a58b54b0beea140.setIcon(icon_f2c604bc95da653fa3071bf66a5c1521);
+            
+    
+            var marker_60c5731554c5cad705c3adaffe3fa938 = L.marker(
+                [29.3303, -100.977],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_df4c1bd63829ff3442ad37a2d48eafeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0cf0431219a4ff35c3829d42c342e4b = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_d183eeb0d5d717d960aff0096b7ea5bb = $(`<div id="html_d183eeb0d5d717d960aff0096b7ea5bb" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> ACUNA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺73.6% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺35.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺94.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻62.4% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺9.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺12.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺17.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻85.5% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_a0cf0431219a4ff35c3829d42c342e4b.setContent(html_d183eeb0d5d717d960aff0096b7ea5bb);
+            
+        
+
+        marker_60c5731554c5cad705c3adaffe3fa938.bindPopup(popup_a0cf0431219a4ff35c3829d42c342e4b)
+        ;
+
+        
+    
+    
+            marker_60c5731554c5cad705c3adaffe3fa938.bindTooltip(
+                `<div>
+                     ACUNA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60c5731554c5cad705c3adaffe3fa938.setIcon(icon_df4c1bd63829ff3442ad37a2d48eafeb);
+            
+    
+            var marker_7af4efc81276a5b168474c0d5c498a56 = L.marker(
+                [29.557, -104.407],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_8b2330538d1010ba1aa90f837cb56963 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e5b59530cfcb3c8cccccae6e137c9d0 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_853cac4bf1235c3d20ff2dae65fa51b6 = $(`<div id="html_853cac4bf1235c3d20ff2dae65fa51b6" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> OJINAGA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺37.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺8.9% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺43.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻69.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_6e5b59530cfcb3c8cccccae6e137c9d0.setContent(html_853cac4bf1235c3d20ff2dae65fa51b6);
+            
+        
+
+        marker_7af4efc81276a5b168474c0d5c498a56.bindPopup(popup_6e5b59530cfcb3c8cccccae6e137c9d0)
+        ;
+
+        
+    
+    
+            marker_7af4efc81276a5b168474c0d5c498a56.bindTooltip(
+                `<div>
+                     OJINAGA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7af4efc81276a5b168474c0d5c498a56.setIcon(icon_8b2330538d1010ba1aa90f837cb56963);
+            
+    
+            var marker_cbb290214b0ebdfc030ed06162beeb8c = L.marker(
+                [29.8138, -109.679],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_818009f707891d681aa36e7562ebbc86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c3eb28d909a36a05108804622f26cb7 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_8b2dc63b0d132810d5ab0928a04fd3a3 = $(`<div id="html_8b2dc63b0d132810d5ab0928a04fd3a3" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MOCTEZUMA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺117.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺70.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺70.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺1.5% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺20.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺54.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺23.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻50.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_3c3eb28d909a36a05108804622f26cb7.setContent(html_8b2dc63b0d132810d5ab0928a04fd3a3);
+            
+        
+
+        marker_cbb290214b0ebdfc030ed06162beeb8c.bindPopup(popup_3c3eb28d909a36a05108804622f26cb7)
+        ;
+
+        
+    
+    
+            marker_cbb290214b0ebdfc030ed06162beeb8c.bindTooltip(
+                `<div>
+                     MOCTEZUMA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cbb290214b0ebdfc030ed06162beeb8c.setIcon(icon_818009f707891d681aa36e7562ebbc86);
+            
+    
+            var marker_ea0061d1f004d6ff5072b57c52caf72d = L.marker(
+                [30.4224, -107.903],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_e61c8d5037eff842a6692b721e71ade9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed90b056d7dcb13695d9c2dbc078273c = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_285bae7692890e1309559c52fe65e02b = $(`<div id="html_285bae7692890e1309559c52fe65e02b" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CASAS GRANDES MIXTA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺1211.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺660.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺991.9% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺571.3% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺12.6% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻3.7% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺12.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻98.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_ed90b056d7dcb13695d9c2dbc078273c.setContent(html_285bae7692890e1309559c52fe65e02b);
+            
+        
+
+        marker_ea0061d1f004d6ff5072b57c52caf72d.bindPopup(popup_ed90b056d7dcb13695d9c2dbc078273c)
+        ;
+
+        
+    
+    
+            marker_ea0061d1f004d6ff5072b57c52caf72d.bindTooltip(
+                `<div>
+                     CASAS GRANDES MIXTA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea0061d1f004d6ff5072b57c52caf72d.setIcon(icon_e61c8d5037eff842a6692b721e71ade9);
+            
+    
+            var marker_0283ce0b95c07decac3323416c3b13ec = L.marker(
+                [30.5411, -115.935],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_c69f676d935c5abc1ea122428d3019cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e85e763c0217d37b5dedfadecd559996 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_9524f26caeef1842a07a49343699fc8c = $(`<div id="html_9524f26caeef1842a07a49343699fc8c" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SAN QUINTIN<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺24.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺7.9% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺67.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻92.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_e85e763c0217d37b5dedfadecd559996.setContent(html_9524f26caeef1842a07a49343699fc8c);
+            
+        
+
+        marker_0283ce0b95c07decac3323416c3b13ec.bindPopup(popup_e85e763c0217d37b5dedfadecd559996)
+        ;
+
+        
+    
+    
+            marker_0283ce0b95c07decac3323416c3b13ec.bindTooltip(
+                `<div>
+                     SAN QUINTIN (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0283ce0b95c07decac3323416c3b13ec.setIcon(icon_c69f676d935c5abc1ea122428d3019cc);
+            
+    
+            var marker_d7b2fa921554a73f7b5982c5344b7a51 = L.marker(
+                [30.5433, -111.127],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_9e3179aec3edb5278a74e3d5eec03360 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df2b08eb19dcbbb29c0b30fb7be5558b = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_b7ef8c3a4ef14f78e2026ada2180c76a = $(`<div id="html_b7ef8c3a4ef14f78e2026ada2180c76a" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SANTA ANA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺469.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺249.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺296.7% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺153.6% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺32.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺21.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺35.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻79.5% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_df2b08eb19dcbbb29c0b30fb7be5558b.setContent(html_b7ef8c3a4ef14f78e2026ada2180c76a);
+            
+        
+
+        marker_d7b2fa921554a73f7b5982c5344b7a51.bindPopup(popup_df2b08eb19dcbbb29c0b30fb7be5558b)
+        ;
+
+        
+    
+    
+            marker_d7b2fa921554a73f7b5982c5344b7a51.bindTooltip(
+                `<div>
+                     SANTA ANA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7b2fa921554a73f7b5982c5344b7a51.setIcon(icon_9e3179aec3edb5278a74e3d5eec03360);
+            
+    
+            var marker_fb06de9f61904090cb66f15ef17e20cf = L.marker(
+                [30.7232, -112.121],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_d14f5274b0506aa5b62a6ae951a23c47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fd281fd93f0ddd73b12fc6aee4e061e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_9e58a16be7475acee8dc83ad701bb00a = $(`<div id="html_9e58a16be7475acee8dc83ad701bb00a" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CABORCA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺19.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺27.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺27.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻77.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_9fd281fd93f0ddd73b12fc6aee4e061e.setContent(html_9e58a16be7475acee8dc83ad701bb00a);
+            
+        
+
+        marker_fb06de9f61904090cb66f15ef17e20cf.bindPopup(popup_9fd281fd93f0ddd73b12fc6aee4e061e)
+        ;
+
+        
+    
+    
+            marker_fb06de9f61904090cb66f15ef17e20cf.bindTooltip(
+                `<div>
+                     CABORCA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb06de9f61904090cb66f15ef17e20cf.setIcon(icon_d14f5274b0506aa5b62a6ae951a23c47);
+            
+    
+            var marker_7f7ab9d606f11438f2cc458ef2306366 = L.marker(
+                [30.9902, -110.273],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_1c13db3e89d571a849104ad810c4782b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29ade4aa6add154d09bab14f61e0e764 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_0f84ac9c02f833f0c06943cdd3b38b50 = $(`<div id="html_0f84ac9c02f833f0c06943cdd3b38b50" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> CANANEA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺600.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺500.0% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺20.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺30.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺41.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻67.8% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_29ade4aa6add154d09bab14f61e0e764.setContent(html_0f84ac9c02f833f0c06943cdd3b38b50);
+            
+        
+
+        marker_7f7ab9d606f11438f2cc458ef2306366.bindPopup(popup_29ade4aa6add154d09bab14f61e0e764)
+        ;
+
+        
+    
+    
+            marker_7f7ab9d606f11438f2cc458ef2306366.bindTooltip(
+                `<div>
+                     CANANEA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f7ab9d606f11438f2cc458ef2306366.setIcon(icon_1c13db3e89d571a849104ad810c4782b);
+            
+    
+            var marker_da0dad7d3658356fba537e0c5331f471 = L.marker(
+                [31.2765, -110.935],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_fef834ceed34dffa335e90a8c0f821fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6834b551f184bc7c757714f7c188dc5e = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_b0dd76b323f2bd189fa061c34a4f0e88 = $(`<div id="html_b0dd76b323f2bd189fa061c34a4f0e88" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> NOGALES<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺211.6% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺127.5% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺214.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺40.5% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺41.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺29.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺44.8% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻67.2% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺78.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻4.6% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺81.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻103.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_6834b551f184bc7c757714f7c188dc5e.setContent(html_b0dd76b323f2bd189fa061c34a4f0e88);
+            
+        
+
+        marker_da0dad7d3658356fba537e0c5331f471.bindPopup(popup_6834b551f184bc7c757714f7c188dc5e)
+        ;
+
+        
+    
+    
+            marker_da0dad7d3658356fba537e0c5331f471.bindTooltip(
+                `<div>
+                     NOGALES (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da0dad7d3658356fba537e0c5331f471.setIcon(icon_fef834ceed34dffa335e90a8c0f821fe);
+            
+    
+            var marker_de03ffa132637a72c881873ad1c4b49c = L.marker(
+                [31.3323, -109.58],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_3f7d896f0df33db6caaf9f507b877dd5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3909e686e96870de7e55ddad8a3169d = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_ab7536971d7a52afdacf3ad040e8feb6 = $(`<div id="html_ab7536971d7a52afdacf3ad040e8feb6" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> AGUA PRIETA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺48.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺74.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻3.6% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻23.5% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺83.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺31.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺84.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻44.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_e3909e686e96870de7e55ddad8a3169d.setContent(html_ab7536971d7a52afdacf3ad040e8feb6);
+            
+        
+
+        marker_de03ffa132637a72c881873ad1c4b49c.bindPopup(popup_e3909e686e96870de7e55ddad8a3169d)
+        ;
+
+        
+    
+    
+            marker_de03ffa132637a72c881873ad1c4b49c.bindTooltip(
+                `<div>
+                     AGUA PRIETA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de03ffa132637a72c881873ad1c4b49c.setIcon(icon_3f7d896f0df33db6caaf9f507b877dd5);
+            
+    
+            var marker_3e123795fb6819f4959c58fa50b5aaf0 = L.marker(
+                [31.3416, -113.512],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_8f1b18c998a36382689c7337516dfd52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52bcf070f4e46d6834cb7677eff35314 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_2e5696b3f774bca9b6614ec76266e037 = $(`<div id="html_2e5696b3f774bca9b6614ec76266e037" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> PUERTO PENASCO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺40.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺33.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺48.2% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻57.6% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺110.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺39.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺115.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻46.0% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_52bcf070f4e46d6834cb7677eff35314.setContent(html_2e5696b3f774bca9b6614ec76266e037);
+            
+        
+
+        marker_3e123795fb6819f4959c58fa50b5aaf0.bindPopup(popup_52bcf070f4e46d6834cb7677eff35314)
+        ;
+
+        
+    
+    
+            marker_3e123795fb6819f4959c58fa50b5aaf0.bindTooltip(
+                `<div>
+                     PUERTO PENASCO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e123795fb6819f4959c58fa50b5aaf0.setIcon(icon_8f1b18c998a36382689c7337516dfd52);
+            
+    
+            var marker_691536e6679dd2e86c02d98ad931adc6 = L.marker(
+                [31.701, -106.425],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_790975bd389df6f32ecd9749804ede64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3193ae4380f3c258c1585a418742882 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_5ecad6d978e44dfed8b001d9283e9935 = $(`<div id="html_5ecad6d978e44dfed8b001d9283e9935" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> JUAREZ VICTORIA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻25.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻32.8% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻27.9% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻115.3% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺211.7% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺46.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺232.1% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻48.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_f3193ae4380f3c258c1585a418742882.setContent(html_5ecad6d978e44dfed8b001d9283e9935);
+            
+        
+
+        marker_691536e6679dd2e86c02d98ad931adc6.bindPopup(popup_f3193ae4380f3c258c1585a418742882)
+        ;
+
+        
+    
+    
+            marker_691536e6679dd2e86c02d98ad931adc6.bindTooltip(
+                `<div>
+                     JUAREZ VICTORIA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_691536e6679dd2e86c02d98ad931adc6.setIcon(icon_790975bd389df6f32ecd9749804ede64);
+            
+    
+            var marker_80dd689701db6e7899589d6ca3d5d3ff = L.marker(
+                [31.8785, -116.608],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_0176980d4edff4c5aceb44c35e66465c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8b9290d55de7f7c145ce3b481f7aa97 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_0d02a11dcc65d87ff96e0bbbe63d72f5 = $(`<div id="html_0d02a11dcc65d87ff96e0bbbe63d72f5" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> ENSENADA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔺5.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺10.0% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻2.9% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻85.8% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻7.8% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺203.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻2.9% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺119.5% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺61.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻4.3% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺81.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻83.6% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_c8b9290d55de7f7c145ce3b481f7aa97.setContent(html_0d02a11dcc65d87ff96e0bbbe63d72f5);
+            
+        
+
+        marker_80dd689701db6e7899589d6ca3d5d3ff.bindPopup(popup_c8b9290d55de7f7c145ce3b481f7aa97)
+        ;
+
+        
+    
+    
+            marker_80dd689701db6e7899589d6ca3d5d3ff.bindTooltip(
+                `<div>
+                     ENSENADA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80dd689701db6e7899589d6ca3d5d3ff.setIcon(icon_0176980d4edff4c5aceb44c35e66465c);
+            
+    
+            var marker_62cd88fb48e8a7e0d38122dc6dc96287 = L.marker(
+                [32.4587308, -116.9896012],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_fc66271b328607bfb0ea4b5538c1b341 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53263e609c8930a54d17bbb0e9dba76c = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_3e886202c8045adc610967d4f4d0c85b = $(`<div id="html_3e886202c8045adc610967d4f4d0c85b" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> -1103_TIJUANA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻53.5% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻88.1% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻153.5% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_53263e609c8930a54d17bbb0e9dba76c.setContent(html_3e886202c8045adc610967d4f4d0c85b);
+            
+        
+
+        marker_62cd88fb48e8a7e0d38122dc6dc96287.bindPopup(popup_53263e609c8930a54d17bbb0e9dba76c)
+        ;
+
+        
+    
+    
+            marker_62cd88fb48e8a7e0d38122dc6dc96287.bindTooltip(
+                `<div>
+                     -1103_TIJUANA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_62cd88fb48e8a7e0d38122dc6dc96287.setIcon(icon_fc66271b328607bfb0ea4b5538c1b341);
+            
+    
+            var marker_00909322c4242e5d70e803c897736374 = L.marker(
+                [32.4618, -116.869],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_0d7f90b60da85b98617900f6cd1c7040 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76203ec8613d2faec5d4f7b5ef805132 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_129dc0757ac519f19e23f3522b270c66 = $(`<div id="html_129dc0757ac519f19e23f3522b270c66" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> TIJUANA FLORIDO<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻100.0% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻100.0% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻100.0% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻100.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔻7.1% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻1.8% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻5.3% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻102.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_76203ec8613d2faec5d4f7b5ef805132.setContent(html_129dc0757ac519f19e23f3522b270c66);
+            
+        
+
+        marker_00909322c4242e5d70e803c897736374.bindPopup(popup_76203ec8613d2faec5d4f7b5ef805132)
+        ;
+
+        
+    
+    
+            marker_00909322c4242e5d70e803c897736374.bindTooltip(
+                `<div>
+                     TIJUANA FLORIDO (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00909322c4242e5d70e803c897736374.setIcon(icon_0d7f90b60da85b98617900f6cd1c7040);
+            
+    
+            var marker_c0260b4800c512930e645b3214add58a = L.marker(
+                [32.4716, -114.74],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_4f32ac40714f89896e2b7d9756fbfd87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3505682923d8f9c0edfad716f2808700 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_e651377aa092a104444f486243dd45bd = $(`<div id="html_e651377aa092a104444f486243dd45bd" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> SAN LUIS RC<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺53.4% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻11.9% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺56.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻107.3% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺57.5% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺13.1% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺57.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻98.4% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_3505682923d8f9c0edfad716f2808700.setContent(html_e651377aa092a104444f486243dd45bd);
+            
+        
+
+        marker_c0260b4800c512930e645b3214add58a.bindPopup(popup_3505682923d8f9c0edfad716f2808700)
+        ;
+
+        
+    
+    
+            marker_c0260b4800c512930e645b3214add58a.bindTooltip(
+                `<div>
+                     SAN LUIS RC (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0260b4800c512930e645b3214add58a.setIcon(icon_4f32ac40714f89896e2b7d9756fbfd87);
+            
+    
+            var marker_3526cf7ca422d22eafe4ad01cb8cb2d3 = L.marker(
+                [32.4727, -117.028],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_3c506574e668201e2b2fcabbe02b0a3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7752a6d271932be84523185d534f119 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_347937671f8f7b2edbbb4a4efb66981f = $(`<div id="html_347937671f8f7b2edbbb4a4efb66981f" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> TIJUANA INSURGENTES<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻29.2% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻29.2% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻33.1% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻126.1% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺100.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺31.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺111.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻63.1% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺67.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺28.8% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺71.4% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻70.9% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_f7752a6d271932be84523185d534f119.setContent(html_347937671f8f7b2edbbb4a4efb66981f);
+            
+        
+
+        marker_3526cf7ca422d22eafe4ad01cb8cb2d3.bindPopup(popup_f7752a6d271932be84523185d534f119)
+        ;
+
+        
+    
+    
+            marker_3526cf7ca422d22eafe4ad01cb8cb2d3.bindTooltip(
+                `<div>
+                     TIJUANA INSURGENTES (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3526cf7ca422d22eafe4ad01cb8cb2d3.setIcon(icon_3c506574e668201e2b2fcabbe02b0a3d);
+            
+    
+            var marker_92183d05c1216457d7dbf4a1d9eb98f9 = L.marker(
+                [32.4944, -117.02],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_04182f99641056d9deb5d8f6d364a158 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e086616c699d71e0b05b69c073b4e2cd = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_4453259a1a037eb4de781011cf45101c = $(`<div id="html_4453259a1a037eb4de781011cf45101c" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> TIJUANA PLAYAS<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔻22.9% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺317.6% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻15.5% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺221.6% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺24.0% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺42.9% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺26.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻103.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_e086616c699d71e0b05b69c073b4e2cd.setContent(html_4453259a1a037eb4de781011cf45101c);
+            
+        
+
+        marker_92183d05c1216457d7dbf4a1d9eb98f9.bindPopup(popup_e086616c699d71e0b05b69c073b4e2cd)
+        ;
+
+        
+    
+    
+            marker_92183d05c1216457d7dbf4a1d9eb98f9.bindTooltip(
+                `<div>
+                     TIJUANA PLAYAS (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92183d05c1216457d7dbf4a1d9eb98f9.setIcon(icon_04182f99641056d9deb5d8f6d364a158);
+            
+    
+            var marker_bda310f404f8f4ecdd33595490487903 = L.marker(
+                [32.5755, -116.609],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_c58443702ef760c073abcd0bd4402263 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d6188600ee837b3c1369e2c62ff76b3 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_b71d88c7f02a4ff95aebdbd5e12c8897 = $(`<div id="html_b71d88c7f02a4ff95aebdbd5e12c8897" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> TECATE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺8.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺19.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺14.0% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻78.7% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺86.3% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺14.7% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺92.6% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻88.1% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_0d6188600ee837b3c1369e2c62ff76b3.setContent(html_b71d88c7f02a4ff95aebdbd5e12c8897);
+            
+        
+
+        marker_bda310f404f8f4ecdd33595490487903.bindPopup(popup_0d6188600ee837b3c1369e2c62ff76b3)
+        ;
+
+        
+    
+    
+            marker_bda310f404f8f4ecdd33595490487903.bindTooltip(
+                `<div>
+                     TECATE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bda310f404f8f4ecdd33595490487903.setIcon(icon_c58443702ef760c073abcd0bd4402263);
+            
+    
+            var marker_a1ae8903f2a545fd4ee0683f1eed7a38 = L.marker(
+                [32.6187, -115.51],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_459f6191bdf41860efd4e34ca8d8cfb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f73c6e6cea60a10f41f6dabfb6dbd04 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_73dd31d7d377da6858dc8ba86f037500 = $(`<div id="html_73dd31d7d377da6858dc8ba86f037500" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MEXICALI PONIENTE<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> AUTOVEND                                          <br>         <b>% vs Ppto:</b> 🔻26.8% bajo Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔻40.3% bajo Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔻32.3% bajo Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻126.0% bajo Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> CANALES ESPECIALES                                <br>         <b>% vs Ppto:</b> 🔺33.9% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺146.4% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺41.5% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔺40.2% sobre Venta 2025 (vs Est)<br>     </div>          <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺16.1% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺15.2% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺23.3% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻89.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_1f73c6e6cea60a10f41f6dabfb6dbd04.setContent(html_73dd31d7d377da6858dc8ba86f037500);
+            
+        
+
+        marker_a1ae8903f2a545fd4ee0683f1eed7a38.bindPopup(popup_1f73c6e6cea60a10f41f6dabfb6dbd04)
+        ;
+
+        
+    
+    
+            marker_a1ae8903f2a545fd4ee0683f1eed7a38.bindTooltip(
+                `<div>
+                     MEXICALI PONIENTE (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1ae8903f2a545fd4ee0683f1eed7a38.setIcon(icon_459f6191bdf41860efd4e34ca8d8cfb1);
+            
+    
+            var marker_0668619df3caca32508f9002649dde4b = L.marker(
+                [32.6212, -115.404],
+                {
+}
+            ).addTo(marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c);
+        
+    
+            var icon_a2e10f77d3da71db19b1d434851017e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94351d7c20c33d24994f5280de61c465 = L.popup({
+  "maxWidth": 400,
+  "minWidth": 300,
+  "maxHeight": 250,
+});
+
+        
+            
+                var html_3e627db96b572154f39504feacf1b3c5 = $(`<div id="html_3e627db96b572154f39504feacf1b3c5" style="width: 100.0%; height: 100.0%;">         <div style="overflow-y:auto; max-height:250px; font-size:13px;">             <b>📍 CeVe:</b> MEXICALI PLAZA<br>             <b>📌 Región:</b> BIM NORTE                                                                                           <br>             <b>📅 Semana:</b> 27<br><hr>                  <div style="border:1px solid #ccc; border-radius:8px; padding:6px; margin-bottom:8px;                 background-color:#f9f9f9;">         <b>🧩 Canal:</b> DETALLE                                           <br>         <b>% vs Ppto:</b> 🔺26.2% sobre Venta 2025 (vs Ppto)<br>         <b>% vs Plan:</b> 🔺1.3% sobre Venta 2025 (vs Plan)<br>         <b>% vs 2024:</b> 🔺38.8% sobre Venta 2025 (vs 2024)<br>         <b>% vs Est:</b> 🔻94.7% bajo Venta 2025 (vs Est)<br>     </div>              </div>         </div>`)[0];
+                popup_94351d7c20c33d24994f5280de61c465.setContent(html_3e627db96b572154f39504feacf1b3c5);
+            
+        
+
+        marker_0668619df3caca32508f9002649dde4b.bindPopup(popup_94351d7c20c33d24994f5280de61c465)
+        ;
+
+        
+    
+    
+            marker_0668619df3caca32508f9002649dde4b.bindTooltip(
+                `<div>
+                     MEXICALI PLAZA (BIM NORTE                                                                                           )
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0668619df3caca32508f9002649dde4b.setIcon(icon_a2e10f77d3da71db19b1d434851017e8);
+            
+    
+            marker_cluster_158255c0fcfbd2f9caf6a4180a7b0a6c.addTo(map_bc766dfa98139737e64d9ac0fdca1fee);
+        
+    
+                var lat_lng_popup_f27f5c433fc8d65f4eefa6f69217c937 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_f27f5c433fc8d65f4eefa6f69217c937
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_bc766dfa98139737e64d9ac0fdca1fee);
+                    }
+                map_bc766dfa98139737e64d9ac0fdca1fee.on('click', latLngPop);
+            
+</script>
+</html>
